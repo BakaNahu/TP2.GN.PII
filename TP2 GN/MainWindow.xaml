@@ -1,0 +1,74 @@
+﻿<Window x:Class="TP2_GN.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TP2_GN"
+        mc:Ignorable="d"
+        Title="Registro de Profesores" Height="450" Width="377">
+    <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
+    <Grid>
+        <StackPanel>
+            <Label Content="Nombre y Apellido"/>
+            <TextBox x:Name="txtNombreApellido" Width="300" Margin="10" HorizontalAlignment="Left"/>
+
+            <Label Content="Domicilio"/>
+            <TextBox x:Name="txtDomicilio" Width="300" Margin="10" HorizontalAlignment="Left"/>
+
+            <Label Content="Localidad"/>
+            <TextBox x:Name="txtLocalidad" Width="300" Margin="10" HorizontalAlignment="Left"/>
+
+            <Label Content="Provincia"/>
+            <ComboBox x:Name="cbxProvincia" Width="300" Margin="10" HorizontalAlignment="Left"/>
+
+            <Label Content="Nro. Celular"/>
+            <TextBox x:Name="txtCelular" Width="300" Margin="10" HorizontalAlignment="Left"/>
+
+            <Label Content="Categoría"/>
+            <ComboBox x:Name="cbxCategoria" Width="300" Margin="10" HorizontalAlignment="Left">
+                <ComboBoxItem Content="Profesor"/>
+                <ComboBoxItem Content="Ayudante"/>
+                <ComboBoxItem Content="Jefe de Trabajos Prácticos"/>
+                <ComboBoxItem Content="Investigador"/>
+                <ComboBoxItem Content="Invitado"/>
+                <ComboBoxItem Content="Asistente de Cátedra"/>
+                <ComboBoxItem Content="Tutor"/>
+                <ComboBoxItem Content="Coordinador Académico"/>
+            </ComboBox>
+
+            <Label Content="Posición"/>
+            <ComboBox x:Name="cbxPosicion" Width="300" Margin="10" HorizontalAlignment="Left">
+                <ComboBoxItem Content="Titular"/>
+                <ComboBoxItem Content="Interino"/>
+                <ComboBoxItem Content="Suplente"/>
+                <ComboBoxItem Content="Visitante"/>
+            </ComboBox>
+
+            <Label Content="Materia que dicta"/>
+            <TextBox x:Name="txtMateria" Width="300" Margin="10" HorizontalAlignment="Left"/>
+
+            <Label Content="Cantidad de horas"/>
+            <TextBox x:Name="txtCantidadHoras" Width="300" Margin="10" HorizontalAlignment="Left"/>
+
+            <Label Content="Valor hora cátedra"/>
+            <TextBox x:Name="txtValorHora" Width="300" Margin="10" HorizontalAlignment="Left"/>
+
+            <Label Content="Días que imparte clases"/>
+            <TextBox x:Name="txtDiasClase" Width="300" Margin="10" HorizontalAlignment="Left"/>
+
+            <Label Content="Nivel de enseñanza"/>
+            <ComboBox x:Name="cbxNivelEnsenanza" Width="300" Margin="10" HorizontalAlignment="Left">
+                <ComboBoxItem Content="Universitario"/>
+                <ComboBoxItem Content="Secundario"/>
+                <ComboBoxItem Content="Primario"/>
+                <ComboBoxItem Content="Inicial"/>
+            </ComboBox>
+
+            <Label Content="Horario"/>
+            <TextBox x:Name="txtHorario" Width="300" Margin="10" HorizontalAlignment="Left"/>
+
+            <Button Content="Guardar" Width="100" Margin="10" Click="Guardar_Click" HorizontalAlignment="Left"/>
+        </StackPanel>
+    </Grid>
+    </ScrollViewer>    
+</Window>

@@ -1,0 +1,15 @@
+C:\Users\Nahu\source\repos\TP2 GN\TP2 GN\obj\Debug\TP2 GN.csproj.AssemblyReference.cache
+C:\Users\Nahu\source\repos\TP2 GN\TP2 GN\obj\Debug\MainWindow.g.cs
+C:\Users\Nahu\source\repos\TP2 GN\TP2 GN\obj\Debug\App.g.cs
+C:\Users\Nahu\source\repos\TP2 GN\TP2 GN\obj\Debug\TP2 GN_MarkupCompile.cache
+C:\Users\Nahu\source\repos\TP2 GN\TP2 GN\obj\Debug\TP2 GN_MarkupCompile.lref
+C:\Users\Nahu\source\repos\TP2 GN\TP2 GN\bin\Debug\TP2 GN.exe.config
+C:\Users\Nahu\source\repos\TP2 GN\TP2 GN\bin\Debug\TP2 GN.exe
+C:\Users\Nahu\source\repos\TP2 GN\TP2 GN\bin\Debug\TP2 GN.pdb
+C:\Users\Nahu\source\repos\TP2 GN\TP2 GN\obj\Debug\MainWindow.baml
+C:\Users\Nahu\source\repos\TP2 GN\TP2 GN\obj\Debug\TP2 GN.g.resources
+C:\Users\Nahu\source\repos\TP2 GN\TP2 GN\obj\Debug\TP2_GN.Properties.Resources.resources
+C:\Users\Nahu\source\repos\TP2 GN\TP2 GN\obj\Debug\TP2 GN.csproj.GenerateResource.cache
+C:\Users\Nahu\source\repos\TP2 GN\TP2 GN\obj\Debug\TP2 GN.csproj.CoreCompileInputs.cache
+C:\Users\Nahu\source\repos\TP2 GN\TP2 GN\obj\Debug\TP2 GN.exe
+C:\Users\Nahu\source\repos\TP2 GN\TP2 GN\obj\Debug\TP2 GN.pdb
