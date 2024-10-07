@@ -5,70 +5,128 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TP2_GN"
         mc:Ignorable="d"
-        Title="Registro de Profesores" Height="450" Width="377">
-    <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
-    <Grid>
-        <StackPanel>
-            <Label Content="Nombre y Apellido"/>
-            <TextBox x:Name="txtNombreApellido" Width="300" Margin="10" HorizontalAlignment="Left"/>
+        Title="Registro de Profesores" Height="450" Width="450">
 
-            <Label Content="Domicilio"/>
-            <TextBox x:Name="txtDomicilio" Width="300" Margin="10" HorizontalAlignment="Left"/>
+    <Grid Background="#6e9aee">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="5*" />
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
 
-            <Label Content="Localidad"/>
-            <TextBox x:Name="txtLocalidad" Width="300" Margin="10" HorizontalAlignment="Left"/>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
 
-            <Label Content="Provincia"/>
-            <ComboBox x:Name="cbxProvincia" Width="300" Margin="10" HorizontalAlignment="Left"/>
+        <!-- titulo -->
+        <TextBlock Name="Titulo"
+               Grid.Column="1"
+               Grid.Row="0"
+               VerticalAlignment="Center"
+               HorizontalAlignment="Center"
+               Text="TP2: Grupo N. Universidad Tecnológica Nacional"
+               FontSize="17"
+               FontWeight="DemiBold"
+               TextWrapping="Wrap"
+               Padding="20"/>
 
-            <Label Content="Nro. Celular"/>
-            <TextBox x:Name="txtCelular" Width="300" Margin="10" HorizontalAlignment="Left"/>
+        <!-- formulario -->
+        <Border Name="Form"
+            Grid.Column="1"
+            Grid.Row="1"
+            Background="#88adf3"
+            CornerRadius="5"
+            BorderThickness="1.5"
+            BorderBrush="DarkSlateBlue"
+            Padding="15"
+            MaxWidth="700">
 
-            <Label Content="Categoría"/>
-            <ComboBox x:Name="cbxCategoria" Width="300" Margin="10" HorizontalAlignment="Left">
-                <ComboBoxItem Content="Profesor"/>
-                <ComboBoxItem Content="Ayudante"/>
-                <ComboBoxItem Content="Jefe de Trabajos Prácticos"/>
-                <ComboBoxItem Content="Investigador"/>
-                <ComboBoxItem Content="Invitado"/>
-                <ComboBoxItem Content="Asistente de Cátedra"/>
-                <ComboBoxItem Content="Tutor"/>
-                <ComboBoxItem Content="Coordinador Académico"/>
-            </ComboBox>
+            <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
+                <StackPanel>
+                    <Label Content="Nombre y Apellido"/>
+                    <TextBox x:Name="txtNombreApellido" Margin="10" HorizontalAlignment="Stretch" MaxLength="50" TextChanged="txtNombreApellido_TextChanged"/>
 
-            <Label Content="Posición"/>
-            <ComboBox x:Name="cbxPosicion" Width="300" Margin="10" HorizontalAlignment="Left">
-                <ComboBoxItem Content="Titular"/>
-                <ComboBoxItem Content="Interino"/>
-                <ComboBoxItem Content="Suplente"/>
-                <ComboBoxItem Content="Visitante"/>
-            </ComboBox>
+                    <Label Content="Domicilio"/>
+                    <TextBox x:Name="txtDomicilio" Margin="10" HorizontalAlignment="Stretch" MaxLength="40" TextChanged="txtDomicilio_TextChanged"/>
 
-            <Label Content="Materia que dicta"/>
-            <TextBox x:Name="txtMateria" Width="300" Margin="10" HorizontalAlignment="Left"/>
+                    <Label Content="Localidad"/>
+                    <TextBox x:Name="txtLocalidad" Margin="10" HorizontalAlignment="Stretch" MaxLength="30"/>
 
-            <Label Content="Cantidad de horas"/>
-            <TextBox x:Name="txtCantidadHoras" Width="300" Margin="10" HorizontalAlignment="Left"/>
+                    <Label Content="Provincia"/>
+                    <ComboBox x:Name="cbxProvincia" Margin="10" HorizontalAlignment="Stretch"/>
 
-            <Label Content="Valor hora cátedra"/>
-            <TextBox x:Name="txtValorHora" Width="300" Margin="10" HorizontalAlignment="Left"/>
+                    <Label Content="Nro. Celular"/>
+                    <TextBox x:Name="txtCelular" Margin="10" HorizontalAlignment="Stretch"/>
 
-            <Label Content="Días que imparte clases"/>
-            <TextBox x:Name="txtDiasClase" Width="300" Margin="10" HorizontalAlignment="Left"/>
+                    <Label Content="Categoría"/>
+                    <ComboBox x:Name="cbxCategoria" Margin="10" HorizontalAlignment="Stretch">
+                        <ComboBoxItem Content="Profesor"/>
+                        <ComboBoxItem Content="Ayudante"/>
+                        <ComboBoxItem Content="Jefe de Trabajos Prácticos"/>
+                        <ComboBoxItem Content="Investigador"/>
+                        <ComboBoxItem Content="Invitado"/>
+                        <ComboBoxItem Content="Asistente de Cátedra"/>
+                        <ComboBoxItem Content="Tutor"/>
+                        <ComboBoxItem Content="Coordinador Académico"/>
+                    </ComboBox>
 
-            <Label Content="Nivel de enseñanza"/>
-            <ComboBox x:Name="cbxNivelEnsenanza" Width="300" Margin="10" HorizontalAlignment="Left">
-                <ComboBoxItem Content="Universitario"/>
-                <ComboBoxItem Content="Secundario"/>
-                <ComboBoxItem Content="Primario"/>
-                <ComboBoxItem Content="Inicial"/>
-            </ComboBox>
+                    <Label Content="Posición"/>
+                    <ComboBox x:Name="cbxPosicion" Margin="10" HorizontalAlignment="Stretch">
+                        <ComboBoxItem Content="Titular"/>
+                        <ComboBoxItem Content="Interino"/>
+                        <ComboBoxItem Content="Suplente"/>
+                        <ComboBoxItem Content="Visitante"/>
+                    </ComboBox>
 
-            <Label Content="Horario"/>
-            <TextBox x:Name="txtHorario" Width="300" Margin="10" HorizontalAlignment="Left"/>
+                    <Label Content="Materia que dicta"/>
+                    <TextBox x:Name="txtMateria" Margin="10" HorizontalAlignment="Stretch"/>
 
-            <Button Content="Guardar" Width="100" Margin="10" Click="Guardar_Click" HorizontalAlignment="Left"/>
-        </StackPanel>
+                    <Label Content="Cantidad de horas (mínimo y máximo)" />
+                    <StackPanel Orientation="Horizontal">
+                        <TextBox x:Name="txtMinHoras" Width="50" Margin="10,0,0,0" MaxLength="6"/>
+                        <TextBox x:Name="txtMaxHoras" Width="50" Margin="10,0,0,0" MaxLength="6"/>
+                    </StackPanel>
+
+
+                    <Label Content="Valor hora cátedra (mínimo y máximo)" />
+                    <StackPanel Orientation="Horizontal">
+                        <TextBox x:Name="txtMinValorHora" Width="50" Margin="10,0,0,0" MaxLength="6"/>
+                        <TextBox x:Name="txtMaxValorHora" Width="50" Margin="10,0,0,0" MaxLength="6"/>
+                    </StackPanel>
+
+
+                    <Label Content="Días que imparte clases"/>
+                    <TextBox x:Name="txtDiasClase" Margin="10" HorizontalAlignment="Stretch"/>
+
+                    <Label Content="Nivel de enseñanza"/>
+                    <ComboBox x:Name="cbxNivelEnsenanza" Margin="10" HorizontalAlignment="Stretch">
+                        <ComboBoxItem Content="Universitario"/>
+                        <ComboBoxItem Content="Secundario"/>
+                        <ComboBoxItem Content="Primario"/>
+                        <ComboBoxItem Content="Inicial"/>
+                    </ComboBox>
+
+                    <Label Content="Horario"/>
+                    <TextBox x:Name="txtHorario" Margin="10" HorizontalAlignment="Stretch"/>
+
+                    <Button Content="Guardar" Width="100" Margin="10" Click="Guardar_Click" HorizontalAlignment="Center"/>
+                </StackPanel>
+            </ScrollViewer>
+        </Border>
+
+        <!-- pie -->
+        <TextBlock Grid.Column="1" 
+               Grid.Row="2" 
+               Text="Integrantes: Nahuel Castro, Maria Lombardo, Romina Avalos, Victoria F. Díaz, Felipe Arce, Isaac Moya, Nicolas Cirulli, Sergio Villar, Leonardo Salas " 
+               HorizontalAlignment="Center" 
+               VerticalAlignment="Center" 
+               FontSize="14"
+               Foreground="Black" 
+               Margin="20,10,20,10"/>
+
     </Grid>
-    </ScrollViewer>    
+
+
 </Window>

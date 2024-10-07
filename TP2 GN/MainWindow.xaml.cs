@@ -28,7 +28,32 @@ namespace TP2_GN
             _viewModel = new ProfesorViewModel();
             DataContext = _viewModel;
         }
-        
+
+        private void txtNombreApellido_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            if (!string.IsNullOrWhiteSpace(txtNombreApellido.Text))
+            {
+                txtNombreApellido.BorderBrush = System.Windows.Media.Brushes.Gray;
+            }
+            else
+            {
+                txtNombreApellido.BorderBrush = System.Windows.Media.Brushes.Red;
+            }
+        }
+
+        private void txtDomicilio_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            if (!string.IsNullOrWhiteSpace(txtDomicilio.Text))
+            {
+                txtDomicilio.BorderBrush = System.Windows.Media.Brushes.Gray;
+            }
+            else
+            {
+                txtDomicilio.BorderBrush = System.Windows.Media.Brushes.Red;
+            }
+        }
+
+
         private void Guardar_Click(object sender, RoutedEventArgs e)
         {
             _viewModel.AgregarProfesor();

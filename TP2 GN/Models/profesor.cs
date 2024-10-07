@@ -8,19 +8,19 @@ namespace TP2_GN.Models
 {
     public class Profesor
     {
-        public string Nombre { get; set; }
-        public string Apellido { get; set; }
-        public string Domicilio { get; set; }
-        public string Localidad { get; set; }
-        public string Provicia { get; set; }
-        public string NroCelular { get; set; }
-        public string Categoria { get; set; }
-        public string Posicion { get; set; }
-        public string Materia { get; set; }
-        public int CantidadHoras { get; set; }
-        public decimal ValorHoraCatedra { get; set; }
-        public string DiasClase { get; set; }
-        public string NivelEnsenanza { get; set; }
-        public string Horario { get; set; }
+        private string Nombre { get; set; }
+        private string Apellido { get; set; }
+        private string Domicilio { get; set; }
+        private string Localidad { get; set; }
+        private string Provicia { get; set; }
+        private string NroCelular { get; set; }
+        private string Categoria { get; set; }
+        private string Posicion { get; set; }
+        private string Materia { get; set; }
+        private int CantidadHoras { get; set; }
+        private decimal ValorHoraCatedra { get; set; }
+        private string DiasClase { get; set; }
+        private string NivelEnsenanza { get; set; }
+        private string Horario { get; set; }
     }
 }
